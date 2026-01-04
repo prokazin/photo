@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваше Имя | Фотограф / Дизайнер</title>
+    <title>Александр Н.Г. | Фотограф</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome для иконок соцсетей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Прелоадер с вращающимся фотоаппаратом -->
+    <div id="preloader">
+        <img src="images/loader-camera.png" alt="Загрузка" class="loader-camera">
+    </div>
 
     <!-- Hero секция -->
     <header class="hero">
         <div class="hero-overlay">
-            <h1>Ваше Имя</h1>
-            <p>Фотограф / Графический дизайнер</p>
-            <a href="#portfolio" class="btn">Смотреть работы</a>
+            <h1>Александр Н.Г.</h1>
+            <p>Профессиональный фотограф</p>
+            <a href="#portfolio" class="btn">Смотреть портфолио</a>
         </div>
     </header>
 
@@ -24,29 +31,33 @@
             <img src="images/work1.jpg" alt="Работа 1" onclick="openLightbox(this)">
             <img src="images/work2.jpg" alt="Работа 2" onclick="openLightbox(this)">
             <img src="images/work3.jpg" alt="Работа 3" onclick="openLightbox(this)">
-            <!-- Добавьте сколько угодно -->
             <img src="images/work4.jpg" alt="Работа 4" onclick="openLightbox(this)">
             <img src="images/work5.jpg" alt="Работа 5" onclick="openLightbox(this)">
-            <img src="images/work6.jpg" alt="Работа 6" onclick="openLightbox(this)">
         </div>
     </section>
 
     <!-- About -->
     <section id="about" class="about">
         <h2>О себе</h2>
-        <p>Краткий текст о вас, опыте, подходе к работе. Добавьте фото себя, если хотите.</p>
+        <p>Привет, я Александр Н.Г. — профессиональный фотограф с более чем 10-летним опытом. Специализируюсь на портретной, уличной и ландшафтной съёмке. Моя цель — поймать настоящий момент, эмоцию и историю в каждом кадре. Работаю с естественным светом, люблю чёрно-белую эстетику и минимализм. Доступен для съёмок, коллабораций и коммерческих проектов.</p>
     </section>
 
     <!-- Contacts -->
     <section id="contact" class="contact">
         <h2>Контакты</h2>
-        <p>Email: your@email.com</p>
-        <p>Instagram: @yourhandle</p>
-        <p>Behance / Telegram и т.д.</p>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <div class="social-icons">
+            <a href="#" title="Instagram"><!-- <i class="fab fa-instagram"></i> --></a>
+            <a href="#" title="Telegram"><!-- <i class="fab fa-telegram"></i> --></a>
+            <a href="#" title="Behance"><!-- <i class="fab fa-behance"></i> --></a>
+            <a href="#" title="VK"><!-- <i class="fab fa-vk"></i> --></a>
+        </div>
+        <p>Готов обсудить ваш проект — пишите!</p>
     </section>
 
     <!-- Lightbox -->
     <div id="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
         <img id="lightbox-img">
     </div>
 
