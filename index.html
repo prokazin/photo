@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше Имя | Фотограф / Дизайнер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero секция -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Ваше Имя</h1>
+            <p>Фотограф / Графический дизайнер</p>
+            <a href="#portfolio" class="btn">Смотреть работы</a>
+        </div>
+    </header>
+
+    <!-- Галерея портфолио -->
+    <section id="portfolio" class="portfolio">
+        <h2>Портфолио</h2>
+        <div class="grid">
+            <img src="images/work1.jpg" alt="Работа 1" onclick="openLightbox(this)">
+            <img src="images/work2.jpg" alt="Работа 2" onclick="openLightbox(this)">
+            <img src="images/work3.jpg" alt="Работа 3" onclick="openLightbox(this)">
+            <!-- Добавьте сколько угодно -->
+            <img src="images/work4.jpg" alt="Работа 4" onclick="openLightbox(this)">
+            <img src="images/work5.jpg" alt="Работа 5" onclick="openLightbox(this)">
+            <img src="images/work6.jpg" alt="Работа 6" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>О себе</h2>
+        <p>Краткий текст о вас, опыте, подходе к работе. Добавьте фото себя, если хотите.</p>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <p>Email: your@email.com</p>
+        <p>Instagram: @yourhandle</p>
+        <p>Behance / Telegram и т.д.</p>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
