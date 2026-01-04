@@ -1,10 +1,11 @@
-function openLightbox(img) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightboxImg.src = img.src;
-    lightbox.style.display = 'flex';
-}
+// Lightbox функции без изменений
+function openLightbox(img) { /* ... */ }
+function closeLightbox() { /* ... */ }
 
-function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-}
+// Скрываем прелоадер после загрузки
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+    setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+    }, 800); // после fade out
+});
